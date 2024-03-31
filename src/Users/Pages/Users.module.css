@@ -1,15 +1,14 @@
 .center {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    padding: 2rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0.5rem;
 }
 
-.center h2
-{
-    color: gold;
+.center h2 {
+  color: gold;
 }

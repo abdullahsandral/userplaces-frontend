@@ -1,13 +1,12 @@
-.sideDrawer
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #122941;
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 15;
+.sideDrawer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #122941;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 15;
 }

@@ -5,7 +5,7 @@
 }
 
 .ldsDualRing:after {
-  content: ' ';
+  content: " ";
   display: block;
   width: 55px;
   height: 55px;

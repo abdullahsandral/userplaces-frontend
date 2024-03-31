@@ -1,12 +1,9 @@
-.inputControl 
-{
-    border: 1px solid red !important;
+.inputControl {
+  border: 1px solid red !important;
 }
-.labelControl 
-{
-    color:red
+.labelControl {
+  color: red;
 }
-.gYellow
-{
-    color: greenyellow;
+.gYellow {
+  color: greenyellow;
 }

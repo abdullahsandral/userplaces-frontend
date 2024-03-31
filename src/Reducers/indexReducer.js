@@ -3,8 +3,8 @@ import PlacesReducer from "./PlacesReducer";
 import UsersReducer from "./UsersReducer";
 
 const reducersList = {
-    users: UsersReducer,
-    places: PlacesReducer
-}
+  users: UsersReducer,
+  places: PlacesReducer,
+};
 
-export default combineReducers(reducersList)
+export default combineReducers(reducersList);

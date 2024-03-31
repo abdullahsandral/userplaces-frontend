@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import classes from './Spinner.module.css';
+import classes from "./Spinner.module.css";
 
-const Spinner = props => {
+const Spinner = (props) => {
   return (
     <div className={`${props.asOverlay && classes.loadingSpinner__overlay}`}>
       <div className={classes.ldsDualRing}></div>

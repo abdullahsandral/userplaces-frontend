@@ -1,16 +1,17 @@
-html, body {
-    margin: 0 !important;
-    padding: 0 !important;
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
 }
-a , a:hover
-{
-    text-decoration: none;
+a,
+a:hover {
+  text-decoration: none;
 }
-.dateDiv{
-    width: 300px;
-    background-color: darkcyan;
-    text-align: center;
-    padding: 1rem;
-    box-sizing: border-box;
-    border-radius: 5px;
+.dateDiv {
+  width: 300px;
+  background-color: darkcyan;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 5px;
 }

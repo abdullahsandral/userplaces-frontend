@@ -1,13 +1,11 @@
-.Progress
-{
+.Progress {
   background-color: white;
   width: 90%;
   height: 30px;
   border-radius: 50px;
   overflow: hidden;
 }
-.Progress div
-{
+.Progress div {
   background-color: black;
   height: 100%;
   max-width: 100%;
@@ -15,8 +13,7 @@
   color: blue;
   position: relative;
 }
-.outerDiv
-{
+.outerDiv {
   width: 100vw;
   background-color: blanchedalmond;
   display: flex;
@@ -24,8 +21,7 @@
   padding: 1rem 0;
   color: white;
 }
-.outerDiv form
-{
+.outerDiv form {
   width: 88%;
   max-width: 700px;
   margin: 0;
@@ -36,13 +32,11 @@
   padding: 0 1rem;
   row-gap: 1.5rem;
 }
-.outerDiv form h3
-{
+.outerDiv form h3 {
   justify-self: center;
   margin-bottom: 0;
 }
-.imgChooser
-{
+.imgChooser {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,19 +48,19 @@
   box-shadow: 0 0 9px 1px forestgreen;
   color: white;
 }
-.imgChooser img
-{
+.imgChooser img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
 }
-.inputDiv, .selector, .tArea
-{
+.inputDiv,
+.selector,
+.tArea {
   display: flex;
   flex-direction: column;
 }
-.inputDiv input, .selector select
-{
+.inputDiv input,
+.selector select {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
@@ -77,40 +71,36 @@
   background-color: white;
   color: black;
 }
-.dob, .CNICdate
-{
-    position: relative;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    height: 35px;
-    padding: 0 10px;
-    border-radius: 5px;
-    border: none;
-    margin-top: 8px;
-    color: black;
-    background-color: white;
+.dob,
+.CNICdate {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 35px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 8px;
+  color: black;
+  background-color: white;
 }
-.react-datepicker
-{
+.react-datepicker {
   position: absolute !important;
 }
-.calendar
-{
-  position: absolute; 
-  width: 100% !important;  
-  top: 2.25rem; 
-  left: 0; 
+.calendar {
+  position: absolute;
+  width: 100% !important;
+  top: 2.25rem;
+  left: 0;
   z-index: 10;
 }
-.games
-{
+.games {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.games div
-{
+.games div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,8 +111,7 @@
   color: black;
   padding-left: 10px;
 }
-.games button 
-{
+.games button {
   height: 35px;
   padding: 5px;
   background-color: green;
@@ -130,52 +119,62 @@
   float: right;
   box-sizing: border-box;
 }
-.games span { flex-grow: 1;height: 100%;line-height: 35px; cursor: pointer;}
-.games select
-{
+.games span {
+  flex-grow: 1;
+  height: 100%;
+  line-height: 35px;
+  cursor: pointer;
+}
+.games select {
   position: absolute;
   top: 60px;
   left: 0;
   width: 100%;
 }
-.tArea textarea
-{
+.tArea textarea {
   border-radius: 5px;
   margin-top: 8px;
 }
-.submitBtn
-{
+.submitBtn {
   background-color: #579457;
   border: none;
   border-radius: 5px;
   color: white;
-  padding: .75rem 0;
+  padding: 0.75rem 0;
   margin-bottom: 1rem;
 }
-.submitBtn:hover
-{
+.submitBtn:hover {
   background-color: green;
 }
 
-@media(min-width:800px)
-{
-  .outerDiv form {  grid-template-columns: 1fr 1fr; column-gap: 2rem;}
-  .outerDiv form h3  {    grid-column: 1/3;  }
-  .imgChooser 
-  { 
+@media (min-width: 800px) {
+  .outerDiv form {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+  .outerDiv form h3 {
+    grid-column: 1/3;
+  }
+  .imgChooser {
     grid-area: 2 / 2 / 6 / 3;
     width: 95%;
     max-width: 95%;
     height: 310px;
   }
-  .outerDiv form fieldset
-  {
+  .outerDiv form fieldset {
     grid-column: 1 / 3;
     border-radius: 5px;
     border: 1px solid white;
-  } 
-  
-  .fieldsetDiv  {  display: flex; }
-  .fieldsetDiv label { margin-right: 10px;}
-  .tArea ,.submitBtn { grid-column: 1/3;}
+  }
+
+  .fieldsetDiv {
+    display: flex;
+  }
+  .fieldsetDiv label {
+    margin-right: 10px;
+  }
+  .tArea,
+  .submitBtn {
+    grid-column: 1/3;
+  }
 }
