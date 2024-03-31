@@ -93,7 +93,7 @@ const PlaceItem = ({
             <Link to={`/places/${P_ID}/detail`}>
               <button className="btn btn-dark m-1">VIEW DETAIL</button>
             </Link>
-            {user.U_ID === userUID && (
+            {user?.U_ID === userUID && (
               <button
                 className="btn btn-danger m-1"
                 onClick={showDeleteModalhandler}

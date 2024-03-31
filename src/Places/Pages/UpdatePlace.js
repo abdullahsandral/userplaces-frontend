@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useContext, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 import Input from "../../Shared/Components/UI Element/Input";
-import { AuthContext } from "../../Shared/Contexts/Authentication-Context";
 import { useForm } from "../../Shared/Hooks/Form-Hook";
 import { MIN_LENGTH_VALIDATOR } from "../../Shared/Util/Validators/Validator";
 import Card from "../../Shared/Components/Card/Card";
@@ -13,10 +12,11 @@ import classes from "./NewPlaces.module.css";
 
 const UpdatePlace = (props) => {
   const dispatchPlaceUpdated = useDispatch();
-  const Authenticated = useContext(AuthContext);
+  const user = JSON.parse(localStorage.getItem("userData"));
+  console.log("User : ", user);
   const history = useHistory();
 
-  const uid = Authenticated.userId;
+  const uid = user?.U_ID;
   const pID = useParams().pID;
 
   const [place, setPlace] = useState();
@@ -70,7 +70,7 @@ const UpdatePlace = (props) => {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer " + Authenticated.userToken + "s",
+            Authorization: "Bearer " + user.U_Token,
           },
           body: JSON.stringify({
             title: formState.inputs.title.inputValue,
@@ -81,7 +81,7 @@ const UpdatePlace = (props) => {
       const responseData = await response.json();
 
       if (!response.ok) {
-        if (responseData.errorCode === 401) Authenticated.logout();
+        if (responseData.errorCode === 401) localStorage.clear();
         setUpdating(false);
         history.push(`/${uid}/places`);
         alert(responseData.errorCode + "\n" + responseData.errorMsg);
